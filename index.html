@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amaresh Consultancy | Chartered Accountant</title>
+    <meta
+      name="description"
+      content="Amaresh Consultancy offers chartered accountant services including taxation, GST, audit support, accounting, compliance, and business advisory."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-top">
+        <a class="brand" href="#home" aria-label="Amaresh Consultancy home">
+          <span>
+            <strong>Amaresh Consultancy</strong>
+            <small>chartered accountants</small>
+          </span>
+          <span class="brand-mark">CA</span>
+        </a>
+
+        <label class="city-select">
+          <span>Select City</span>
+          <select aria-label="Select city">
+            <option>Bengaluru</option>
+            <option>Hubli</option>
+            <option>Mysuru</option>
+          </select>
+        </label>
+
+        <label class="language-select">
+          <span class="sr-only">Select Language</span>
+          <select aria-label="Select language" data-language-select>
+            <option value="en">English</option>
+            <option value="kn">Kannada</option>
+            <option value="hi">Hindi</option>
+          </select>
+        </label>
+
+        <div class="network-mark">
+          <small>Professional firm for</small>
+          <strong>tax | audit | advisory</strong>
+        </div>
+      </div>
+
+      <div class="header-nav-row">
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#about">ABOUT US</a>
+          <div class="nav-dropdown">
+            <a href="#services" class="services-link">SERVICES</a>
+            <div class="services-menu" aria-label="Services menu">
+              <div class="service-menu-categories">
+                <button type="button" class="active" data-service-tab="auditing">Auditing <span>-></span></button>
+                <button type="button" data-service-tab="transfer-pricing">Transfer Pricing</button>
+                <button type="button" data-service-tab="gst">GST <span>-></span></button>
+                <button type="button" data-service-tab="income-tax">Income Tax <span>-></span></button>
+                <button type="button" data-service-tab="startup">Start Up <span>-></span></button>
+                <button type="button" data-service-tab="outsourcing">Outsourcing</button>
+                <button type="button" data-service-tab="advisory">Advisory</button>
+                <button type="button" data-service-tab="management">Management Consulting <span>-></span></button>
+              </div>
+              <div class="service-menu-details">
+                <div class="active" data-service-panel="auditing">
+                  <strong>Auditing</strong>
+                  <p>
+                    Review financial records, controls, and compliance so the business can present
+                    reliable statements and identify gaps early.
+                  </p>
+                  <a href="#service-auditing">Statutory Audit</a>
+                  <a href="#service-auditing">Internal Audit</a>
+                  <a href="#service-auditing">IND AS</a>
+                  <a href="#service-auditing">Public Sector Audit</a>
+                  <a href="#service-auditing">Company Secretarial Services</a>
+                </div>
+                <div data-service-panel="transfer-pricing">
+                  <strong>Transfer Pricing</strong>
+                  <p>
+                    Documentation and review support for related-party and international
+                    transactions, with a focus on defensible compliance.
+                  </p>
+                  <a href="#service-transfer-pricing">Transfer Pricing Documentation</a>
+                  <a href="#service-transfer-pricing">International Transaction Review</a>
+                  <a href="#service-transfer-pricing">Compliance Support</a>
+                </div>
+                <div data-service-panel="gst">
+                  <strong>GST</strong>
+                  <p>
+                    Registration, return filing, audit support, reconciliations, and practical
+                    guidance for GST compliance.
+                  </p>
+                  <a href="#service-gst">GST Registration</a>
+                  <a href="#service-gst">GST Audit</a>
+                  <a href="#service-gst">GST Services</a>
+                </div>
+                <div data-service-panel="income-tax">
+                  <strong>Income Tax</strong>
+                  <p>
+                    Tax planning, ITR support, tax audit assistance, advisory, and support for
+                    notices or assessments.
+                  </p>
+                  <a href="#service-income-tax">Tax Consulting Services</a>
+                  <a href="#service-income-tax">Tax Audit</a>
+                  <a href="#service-income-tax">Income Tax Advisory</a>
+                  <a href="#service-income-tax">NRI Taxation</a>
+                  <a href="#service-income-tax">Easy IT Filing</a>
+                </div>
+                <div data-service-panel="startup">
+                  <strong>Start Up</strong>
+                  <p>
+                    Business setup guidance for founders, including entity selection, registration,
+                    early compliance, and funding readiness.
+                  </p>
+                  <a href="#service-startup">Startup Registration Process</a>
+                  <a href="#service-startup">Setting Up New Business</a>
+                  <a href="#service-startup">Startup Funding</a>
+                  <a href="#service-startup">Proprietorship</a>
+                  <a href="#service-startup">Partnership</a>
+                  <a href="#service-startup">Limited Liability Partnership</a>
+                  <a href="#service-startup">Trust</a>
+                  <a href="#service-startup">Society</a>
+                  <a href="#service-startup">Private Limited Company</a>
+                </div>
+                <div data-service-panel="outsourcing">
+                  <strong>Outsourcing</strong>
+                  <p>
+                    Ongoing accounting, payroll, bookkeeping, and compliance support for businesses
+                    that want dependable back-office finance operations.
+                  </p>
+                  <a href="#service-outsourcing">Accounting Outsourcing</a>
+                  <a href="#service-outsourcing">Compliance Outsourcing</a>
+                  <a href="#service-outsourcing">Payroll and Records Support</a>
+                </div>
+                <div data-service-panel="advisory">
+                  <strong>Advisory</strong>
+                  <p>
+                    Practical financial, business, and compliance advice for decisions involving
+                    growth, reporting, tax, and internal controls.
+                  </p>
+                  <a href="#service-advisory">Financial Advisory</a>
+                  <a href="#service-advisory">Business Advisory</a>
+                  <a href="#service-advisory">Compliance Advisory</a>
+                </div>
+                <div data-service-panel="management">
+                  <strong>Management Consulting</strong>
+                  <p>
+                    Consulting support for business agreements, labour law matters, sector-specific
+                    compliance, and asset verification.
+                  </p>
+                  <a href="#service-management">Joint Development Agreement</a>
+                  <a href="#service-management">Labour Law Consultancy</a>
+                  <a href="#service-management">Energy Sector Services</a>
+                  <a href="#service-management">Fixed Asset Verification</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a href="#contact">CONTACT US</a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="contact-icon" href="tel:+917019519189" aria-label="Call Amaresh Consultancy">Call</a>
+          <a class="contact-icon" href="mailto:akconsulatancy18@gmail.com" aria-label="Email Amaresh Consultancy">Mail</a>
+          <a class="payment-button" href="#contact">Payment</a>
+          <button class="client-login" type="button" data-open-login>Client login</button>
+          <button class="ticket-button" type="button" data-open-ticket>Raise ticket</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>Amaresh Consultancy</h1>
+          <p class="hero-copy">
+            Amaresh Consultancy is a chartered accountant office focused on taxation, auditing,
+            GST, startup registrations, compliance, and business advisory. The firm supports
+            individuals, firms, and growing businesses with clear financial guidance and careful
+            documentation.
+          </p>
+          <p class="hero-copy">
+            With practical experience across accounting, tax planning, compliance outsourcing,
+            and management consulting, the office works to make financial decisions easier,
+            filings smoother, and business records more reliable.
+          </p>
+        </div>
+        <figure class="hero-visual">
+          <img
+            src="assets/hero-accounting-office.png"
+            alt="Professional accounting office desk with financial reports"
+          />
+        </figure>
+      </section>
+
+      <a class="enquire-tab" href="#contact">ENQUIRE NOW</a>
+
+      <section class="trust-strip" aria-label="Practice highlights">
+        <div>
+          <strong>Income Tax</strong>
+          <span>Consultancy, tax audit, advisory</span>
+        </div>
+        <div>
+          <strong>GST</strong>
+          <span>Registration, returns, reconciliation</span>
+        </div>
+        <div>
+          <strong>Audit Support</strong>
+          <span>Statutory, internal, and compliance</span>
+        </div>
+      </section>
+
+      <section class="section" id="services">
+        <div class="section-heading">
+          <p class="eyebrow">Services</p>
+          <h2>Services planned around the way clients actually need CA support.</h2>
+        </div>
+
+        <div class="service-map" aria-label="Amaresh Consultancy service map">
+          <article class="service-branch" id="service-auditing">
+            <span class="service-icon">01</span>
+            <h3>Auditing</h3>
+            <p class="service-desc">
+              Auditing helps verify whether financial records are accurate, complete, and compliant
+              with applicable standards. Amaresh Consultancy supports businesses with audit
+              preparation, documentation review, internal checks, and practical recommendations.
+            </p>
+            <ul>
+              <li>Statutory Audit</li>
+              <li>Internal Audit</li>
+              <li>IND AS</li>
+              <li>Public Sector Audit</li>
+              <li>Company Secretarial Services</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-transfer-pricing">
+            <span class="service-icon">02</span>
+            <h3>Transfer Pricing</h3>
+            <p class="service-desc">
+              Transfer pricing support helps businesses document related-party transactions and
+              maintain records that are clear, consistent, and ready for review when required.
+            </p>
+            <ul>
+              <li>Transfer pricing documentation</li>
+              <li>International transaction review</li>
+              <li>Compliance support</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-gst">
+            <span class="service-icon">03</span>
+            <h3>GST</h3>
+            <p class="service-desc">
+              GST services cover registration, return filing, reconciliation, input tax credit
+              checks, audit readiness, and guidance on routine compliance for businesses and
+              professionals.
+            </p>
+            <ul>
+              <li>GST Registration</li>
+              <li>GST Audit</li>
+              <li>GST Services</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-income-tax">
+            <span class="service-icon">04</span>
+            <h3>Income Tax</h3>
+            <p class="service-desc">
+              Income tax support includes planning, return filing, tax audit coordination,
+              deductions review, advisory, and assistance with notices, assessments, and compliance
+              timelines.
+            </p>
+            <ul>
+              <li>Tax Consulting Services</li>
+              <li>Tax Audit</li>
+              <li>Income Tax Advisory</li>
+              <li>NRI Taxation</li>
+              <li>Easy IT Filing</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-startup">
+            <span class="service-icon">05</span>
+            <h3>Start Up</h3>
+            <p class="service-desc">
+              Startup services guide founders from idea to registration, helping choose the right
+              structure, prepare basic documents, understand registrations, and set up early
+              compliance.
+            </p>
+            <ul>
+              <li>Startup Registration Process</li>
+              <li>Setting Up New Business</li>
+              <li>Startup Funding</li>
+              <li>Proprietorship</li>
+              <li>Partnership</li>
+              <li>Limited Liability Partnership</li>
+              <li>Trust</li>
+              <li>Society</li>
+              <li>Private Limited Company</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-outsourcing">
+            <span class="service-icon">06</span>
+            <h3>Outsourcing</h3>
+            <p class="service-desc">
+              Outsourcing support keeps accounting, payroll, records, and compliance work organized
+              so owners can focus on operations while finance tasks remain consistent.
+            </p>
+            <ul>
+              <li>Accounting outsourcing</li>
+              <li>Compliance outsourcing</li>
+              <li>Payroll and records support</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-advisory">
+            <span class="service-icon">07</span>
+            <h3>Advisory</h3>
+            <p class="service-desc">
+              Advisory services help clients understand financial decisions, compliance risks,
+              business structure, and planning options with practical CA-led guidance.
+            </p>
+            <ul>
+              <li>Financial advisory</li>
+              <li>Business advisory</li>
+              <li>Compliance advisory</li>
+            </ul>
+          </article>
+
+          <article class="service-branch" id="service-management">
+            <span class="service-icon">08</span>
+            <h3>Management Consulting</h3>
+            <p class="service-desc">
+              Management consulting supports business agreements, labour law requirements,
+              sector-specific needs, fixed asset verification, and process improvement.
+            </p>
+            <ul>
+              <li>Joint Development Agreement</li>
+              <li>Labour Law Consultancy</li>
+              <li>Energy Sector Services</li>
+              <li>Fixed Asset Verification</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-band" id="about">
+        <div class="about-content">
+          <p class="eyebrow">Why clients choose us</p>
+          <h2>Reliable CA services with attention to detail and practical business sense.</h2>
+          <p>
+            Amaresh Consultancy works with clients who want their financial records, filings,
+            and compliance handled carefully. The practice focuses on timely communication,
+            accurate documentation, and advice that is easy to act on.
+          </p>
+        </div>
+        <div class="about-list" aria-label="Key strengths">
+          <div>
+            <strong>Responsive</strong>
+            <span>Quick follow-ups for filings, documents, and due-date reminders.</span>
+          </div>
+          <div>
+            <strong>Organized</strong>
+            <span>Structured checklists and clean records for smoother compliance.</span>
+          </div>
+          <div>
+            <strong>Clear</strong>
+            <span>Explanations in plain language, without unnecessary complexity.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section team-section" id="team">
+        <div class="section-heading">
+          <p class="eyebrow">Our Team</p>
+          <h2>Meet the founder behind Amaresh Consultancy.</h2>
+        </div>
+
+        <article class="team-profile">
+          <div class="team-photo">
+            <img src="assets/amaresh-k-founder.png" alt="Amaresh K, founder and chartered accountant" />
+          </div>
+          <div class="team-bio">
+            <p class="eyebrow">Founder</p>
+            <h3>Amaresh K</h3>
+            <strong>Chartered Accountant</strong>
+            <p>
+              I am Amaresh K, a qualified Chartered Accountant with over 8 years of professional
+              experience in taxation, GST compliance, and financial consulting. I specialize in
+              income tax planning, GST registration and filing, startup business registration,
+              accounting, auditing support, and financial planning.
+            </p>
+            <p>
+              My goal is to provide reliable, compliant, and practical financial solutions that
+              help individuals, startups, and businesses grow with confidence. I am committed to
+              delivering personalized service, maintaining the highest standards of professionalism,
+              and building long-term relationships based on trust, integrity, and excellence.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="section-heading">
+          <p class="eyebrow">Contact Us</p>
+          <h2>Send an enquiry and start with a consultation.</h2>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-panel">
+            <h3>Amaresh Consultancy</h3>
+            <p>Chartered Accountant</p>
+            <dl>
+              <div>
+                <dt>Phone</dt>
+                <dd>
+                  <a href="tel:+917019519189">+91 70195 19189</a><br />
+                  <a href="tel:+918152994880">+91 81529 94880</a>
+                </dd>
+              </div>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:akconsulatancy18@gmail.com">akconsulatancy18@gmail.com</a></dd>
+              </div>
+              <div>
+                <dt>Office</dt>
+                <dd>
+                  Amaresh Consultancy, 2nd floor, Sri Amareshwara Nilaya,
+                  behind Happy Kids International, Vallaballary Road,
+                  PWD Camp, Sindhanur - 584128
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <form
+            class="contact-form"
+            action="https://formsubmit.co/akconsulatancy18@gmail.com"
+            method="POST"
+          >
+            <input type="hidden" name="_subject" value="New enquiry from Amaresh Consultancy website" />
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="+91" required />
+            </label>
+            <label>
+              Service needed
+              <select name="service" required>
+                <option>Auditing</option>
+                <option>GST services</option>
+                <option>Income tax consultancy</option>
+                <option>Startup registration</option>
+                <option>Management consulting</option>
+              </select>
+            </label>
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="4"
+                placeholder="Tell us what you need help with"
+                required
+              ></textarea>
+            </label>
+            <button type="submit">Send enquiry</button>
+            <p class="form-note" data-form-status aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <strong>Head Office</strong>
+          <span>
+            Amaresh Consultancy, 2nd floor, Sri Amareshwara Nilaya,
+            behind Happy Kids International, Vallaballary Road,
+            PWD Camp, Sindhanur - 584128
+          </span>
+          <a href="https://maps.app.goo.gl/61wbJwJRMxEUeQtR6" target="_blank" rel="noreferrer">Open map</a>
+        </div>
+        <div>
+          <strong>Our Business Hours</strong>
+          <span>Monday to Saturday</span>
+          <span>10:00 AM - 6:00 PM</span>
+        </div>
+        <div>
+          <strong>Contact Us</strong>
+          <a href="tel:+917019519189">+91 70195 19189</a>
+          <a href="tel:+918152994880">+91 81529 94880</a>
+          <a href="mailto:akconsulatancy18@gmail.com">akconsulatancy18@gmail.com</a>
+        </div>
+        <div>
+          <strong>Follow Us On</strong>
+          <div class="social-links" aria-label="Social media links">
+            <a href="#" aria-label="LinkedIn">in</a>
+            <a href="#" aria-label="Facebook">f</a>
+            <a href="#" aria-label="Instagram">ig</a>
+            <a href="#" aria-label="YouTube">yt</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Amaresh Consultancy. All rights reserved.</p>
+        <div>
+          <button type="button" data-open-login>Client login</button>
+          <button type="button" data-open-register>New client register</button>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" data-login-modal hidden>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="login-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
+        <p class="eyebrow">Client Access</p>
+        <h2 id="login-title">Login</h2>
+        <form class="mini-form">
+          <label>
+            Email or mobile number
+            <input type="text" placeholder="Enter email or mobile" />
+          </label>
+          <label>
+            Password
+            <input type="password" placeholder="Enter password" />
+          </label>
+          <button type="button">Continue</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" data-register-modal hidden>
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="register-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
+        <p class="eyebrow">New Client</p>
+        <h2 id="register-title">Register</h2>
+        <form class="mini-form">
+          <label>
+            Name
+            <input type="text" placeholder="Your name" />
+          </label>
+          <label>
+            Mobile number
+            <input type="tel" placeholder="+91" />
+          </label>
+          <label>
+            Service required
+            <input type="text" placeholder="GST, tax filing, audit..." />
+          </label>
+          <button type="button">Submit request</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" data-ticket-modal hidden>
+      <div class="modal-card ticket-card" role="dialog" aria-modal="true" aria-labelledby="ticket-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
+        <p class="eyebrow">Support</p>
+        <h2 id="ticket-title">Raise ticket</h2>
+        <form
+          class="mini-form ticket-form"
+          action="https://formsubmit.co/akconsulatancy18@gmail.com"
+          method="POST"
+          data-ticket-form
+        >
+          <input type="hidden" name="_subject" value="New support ticket from Amaresh Consultancy website" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label>
+            Name <span class="required-star">*</span>
+            <input type="text" name="name" placeholder="Your name" required />
+          </label>
+          <label>
+            Phone <span class="required-star">*</span>
+            <input type="tel" name="phone" placeholder="+91" required />
+          </label>
+          <label>
+            Email <span class="required-star">*</span>
+            <input type="email" name="email" placeholder="Your email" required />
+          </label>
+          <label>
+            Service required <span class="required-star">*</span>
+            <select name="service_required" required>
+              <option value="">Select service</option>
+              <option>Auditing</option>
+              <option>GST services</option>
+              <option>Income tax consultancy</option>
+              <option>Startup registration</option>
+              <option>Management consulting</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            Message <span class="required-star">*</span>
+            <textarea name="message" rows="4" placeholder="Write your issue or requirement" required></textarea>
+          </label>
+          <button type="submit">Submit ticket</button>
+          <p class="form-note" data-ticket-status aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal" data-success-modal hidden>
+      <div class="modal-card success-card" role="dialog" aria-modal="true" aria-labelledby="success-title">
+        <button class="modal-close" type="button" data-close-modal aria-label="Close">x</button>
+        <p class="eyebrow">Thank you</p>
+        <h2 id="success-title">We will get back to you soon.</h2>
+        <p>Your enquiry has been sent to Amaresh Consultancy.</p>
+        <button class="success-action" type="button" data-close-modal>Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
