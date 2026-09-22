@@ -1,3 +1,41 @@
+
+// Mobile navigation
+const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+const siteNav = document.querySelector(".site-nav");
+const servicesDropdown = document.querySelector(".nav-dropdown");
+
+if (mobileMenuToggle && siteNav) {
+  mobileMenuToggle.addEventListener("click", () => {
+    const open = siteNav.classList.toggle("mobile-open");
+    mobileMenuToggle.classList.toggle("is-open", open);
+    mobileMenuToggle.setAttribute("aria-expanded", String(open));
+    mobileMenuToggle.setAttribute("aria-label", open ? "Close navigation" : "Open navigation");
+  });
+}
+
+if (servicesDropdown) {
+  const servicesLink = servicesDropdown.querySelector(".services-link");
+  if (servicesLink) {
+    servicesLink.addEventListener("click", (event) => {
+      if (window.matchMedia("(max-width: 768px)").matches) {
+        event.preventDefault();
+        servicesDropdown.classList.toggle("services-open");
+      }
+    });
+  }
+}
+
+document.querySelectorAll(".site-nav a:not(.services-link)").forEach((link) => {
+  link.addEventListener("click", () => {
+    if (window.matchMedia("(max-width: 768px)").matches && siteNav && mobileMenuToggle) {
+      siteNav.classList.remove("mobile-open");
+      mobileMenuToggle.classList.remove("is-open");
+      mobileMenuToggle.setAttribute("aria-expanded", "false");
+      mobileMenuToggle.setAttribute("aria-label", "Open navigation");
+    }
+  });
+});
+
 const contactForm = document.querySelector(".contact-form");
 const ticketForm = document.querySelector("[data-ticket-form]");
 const loginModal = document.querySelector("[data-login-modal]");
